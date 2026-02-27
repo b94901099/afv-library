@@ -1,0 +1,11 @@
+˝{
+  "name": "afv-library",
+  "description": "AI prompts and rules library for Agentforce Vibes development",
+  "private": true,
+  "devDependencies": {
+    "@salesforce/webapp-template-app-react-sample-b2e-experimental": "*"
+  },
+  "scripts": {
+    "sync-react-b2e-sample": "node scripts/sync-react-b2e-sample.js"
+  }
+}

@@ -31,6 +31,8 @@ afv-library/
 │   ├── metadata-deployments/
 │   ├── testing-automation/
 │   └── ...
+├── samples/              # Synced sample apps (e.g. from npm)
+│   └── webapp-template-app-react-sample-b2e-experimental/
 └── README.md
 ```
 
@@ -47,6 +49,17 @@ afv-library/
 ### Manual Usage
 
 Browse the repository and copy/paste any prompt, rule, or skill directly into Agentforce Vibes or your preferred AI tool.
+
+### Samples
+
+The `samples/` folder contains synced sample apps. For example, `samples/webapp-template-app-react-sample-b2e-experimental/` is kept in sync with the npm package `@salesforce/webapp-template-app-react-sample-b2e-experimental` (nightly and on manual trigger via GitHub Actions). To run the same sync locally from the repo root:
+
+```bash
+npm install
+npm run sync-react-b2e-sample
+```
+
+The GitHub Action runs these same commands and opens a PR only when the npm package version has changed. See [samples/README.md](samples/README.md) for details.
 
 ### Connecting Team or Personal Libraries
 
